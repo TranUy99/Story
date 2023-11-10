@@ -1,8 +1,6 @@
-import 'dart:developer';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:story/src/home/model/story.dart';
+import 'package:story/src/model/story.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -41,7 +39,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 220, 220, 220),
+        backgroundColor: Colors.white,
         title: Image.asset(
           "assets/logo.png",
           width: 60,
@@ -94,7 +92,7 @@ class _HomeState extends State<Home> {
                     height: 20,
                   ),
                   Text(
-                    "If you joke the wrong way, your teeth have to pay. (Serious)",
+                    "If you joke wrong way, your teeth have to pay. (Serious)",
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                     ),
@@ -223,7 +221,7 @@ class _HomeState extends State<Home> {
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 150,
+              height: 142,
               decoration: const BoxDecoration(
                 border: Border(
                     top: BorderSide(
